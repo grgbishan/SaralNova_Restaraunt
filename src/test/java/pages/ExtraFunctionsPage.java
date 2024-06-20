@@ -13,7 +13,7 @@ import java.util.List;
 
 public class ExtraFunctionsPage {
     public static WebDriver driver;
-//    public By popUp = By.xpath("");
+    public By popUp = By.xpath("");
 
 
     public ExtraFunctionsPage(WebDriver newDriver) {driver = newDriver;}
@@ -46,19 +46,4 @@ public class ExtraFunctionsPage {
         return expectedOptions;
     }
 
-//    public void popUpAlert(){
-//        driver.findElement(popUp).getText();
-//}
-    public void selectImage(By element, String filepath){
-        WebElement imageSelectorBtn = driver.findElement(element);
-        imageSelectorBtn.sendKeys(filepath);
-    }
-
-    public void clickTheElement(By element){
-        driver.findElement(element).click();
-    }
-
-    public void sendTheData(By element, String data){
-        driver.findElement(element).sendKeys(data);
-    }
 }

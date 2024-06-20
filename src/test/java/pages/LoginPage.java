@@ -8,7 +8,9 @@ public class LoginPage {
     public By email = By.xpath("//*[@id=\"email\"]");
     public By password = By.xpath("//*[@id=\"password\"]");
     public By loginBtn = By.xpath("/html/body/div[1]/div[2]/form/div[4]/button");
-    public static final String correctEmail = "forestway@sns.com";
+    public By Toast = By.cssSelector("div.swal2-popup");
+
+    public static final String correctEmail = "lohiwe4964@jahsec.com";
     public static final String correctPassword = "12345678";
 
     public LoginPage(WebDriver newDriver){
@@ -20,10 +22,5 @@ public class LoginPage {
         driver.findElement(password).sendKeys(c_password);
         driver.findElement(loginBtn).click();
     }
-
-
-
-
-
 
 }

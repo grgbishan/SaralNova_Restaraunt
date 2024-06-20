@@ -34,6 +34,9 @@ public class RestaurantDashboardTest {
         driver.quit();
     }
 
+
+
+
     @Test
     public void restaurantDashboardPageIsDisplayed(){
         driver.findElement(restaurantText).click();
